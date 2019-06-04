@@ -1,0 +1,12 @@
+<h1>Customers</h1>
+<div *ngFor="let customer of customers | async " style="width:300px;">
+<div>
+  <label>Name:</label>{{customer.name}}
+</div>
+<div>
+  <label>Age:</label>{{customer.age}}
+</div>
+<div>
+  <label>Active:</label>{{customer.active}}
+</div>
+</div>
