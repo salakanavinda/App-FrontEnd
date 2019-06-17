@@ -1,4 +1,4 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import {CustomerService} from '../customer.service';
 import { Customer } from '../customer';
 import { Observable } from 'rxjs';
@@ -11,8 +11,7 @@ import { Observable } from 'rxjs';
 })
 export class CustomerDetailsComponent implements OnInit {
 
-  //@Input() customer: Customer;
- customers: Observable<Customer>;
+  customers: Observable<Customer>;
 
   constructor(private customerService: CustomerService) { }
 
